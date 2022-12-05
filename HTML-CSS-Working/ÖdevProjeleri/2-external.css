@@ -1,0 +1,33 @@
+* {
+  /* unıversal selector*/
+  background-color: azure;
+}
+/* override -> ezme  */
+/* 
+body {
+  background-color: antiquewhite;
+} */
+
+h1 {
+  color: red;
+}
+/* ?saydamlık katsayısı */
+h1:hover {
+  opacity: 0.1;
+  cursor: pointer;
+}
+li {
+  list-style-type: none;
+  color: blueviolet;
+}
+/*   ?her bir li'nin üzerine fare ile gelindiginde yazılar belirginleşsin */
+li:hover {
+  color: purple;
+  font-weight: 1000;
+
+  /* ?ayarlanan sekmeye gelinceişaretçi el şeklinde görülür */
+  cursor: pointer;
+}
+.list {
+  border: 1px solid red;
+}
