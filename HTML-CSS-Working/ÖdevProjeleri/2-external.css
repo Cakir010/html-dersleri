@@ -16,6 +16,7 @@ h1:hover {
   opacity: 0.1;
   cursor: pointer;
 }
+/*  ?list type komutu liste uygulmalrında sıralama özelliklerini belirliyor */
 li {
   list-style-type: none;
   color: blueviolet;
