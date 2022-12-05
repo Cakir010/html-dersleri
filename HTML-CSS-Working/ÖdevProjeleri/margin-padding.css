@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: aqua;
+}
+.div {
+  background-color: antiquewhite;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  /*  ?burada padingin bir iç hacim oldugunu marginin dış uzaklık oldugunu gördük */
+  padding: 20px;
+  
+}
