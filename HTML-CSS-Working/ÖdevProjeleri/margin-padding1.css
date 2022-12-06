@@ -1,0 +1,32 @@
+* {
+    /** universal secici 
+    ** tum html elemanlarinin margin ve padding'lerini sifirla*/
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    background-color: aquamarine;
+    /** Ana div'e her yonden 10px dis uzaklik verdik */
+    margin: 10px;
+  
+    /** Ana divin ic hacmini her yonden 20px genislettik */
+    padding: 20px;
+  
+    /* text-align: center; */
+    /*! Bir blok element icerinde inline elementler var ise bunlar text-align ile hizalanabilir. Blok element icerisindeki blok elementler text align ile hizalanamaz. */
+  }
+  .div {
+    background-color: antiquewhite;
+  
+    padding: 20px;
+    /* width: 50%; */
+    width: 100px;
+    text-align: center;
+  
+    /*? div gibi blok elementler margin:auto ile ortalanabilr. */
+    margin: 20px auto;
+    /* margin-bottom: 10px;
+    margin-top: 20px; */
+  }
+  

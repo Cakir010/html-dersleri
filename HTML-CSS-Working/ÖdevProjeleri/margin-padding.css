@@ -5,6 +5,12 @@
 
 .container {
   background-color: aqua;
+  /* ?ana div e her yönden 10px dıs uzaklık verdık  */
+  margin: 10px;
+  /*? ana divin iç hacmini her yönden 20px genişletik  */
+
+  padding: 20px;
+  /* text-align: center; */
 }
 
 .div {
@@ -13,6 +19,9 @@
   margin-top: 20px;
   /*  ?burada padingin bir iç hacim oldugunu marginin dış uzaklık oldugunu gördük */
   padding: 20px;
-  
-  
+  /* width: 50%; */
+  width: 100px;
+  text-align: center;
+  margin: 20px;
+  border: 1px;
 }
