@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+
+  background-image: url(../background_image.jpg);
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: auto;
+  
+
+  
+}
+#desciription {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+
+  
+}
+
+.box1 label {
+display: inline-block;
+margin-bottom: 10px;
+
+
+}
+
+.box1 input{
+    padding: 5px;
+    border-radius: 5px;
+    text-indent: 5px;
+    
+}
+
+
+#title{
+  
+    text-align: center;
+    font-family: "Bowlby One Sc", cursive;
+    color: white;
+    font-size: 40px;
+    ;
+}
+
+span{
+    color: red;
+}
+
+#survey-form {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000000;
+  opacity: 0.8;
+  width: fit-content;
+  margin: auto;
+  padding: 45px;
+  /* text-align: center; */
+}
+.box {
+  margin-bottom: 20px;
+  
+  font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button{
+    color: white;
+    width: 120px;
+    height: 5vh;
+    background-color: red;
+    border-radius: 50px;
+    padding-top: 10px;
+}
+
+.box select{
+    margin-top: 9px;
+}
+
+.özel{
+   
+    
+}
+
+textarea {
+    resize: none;
+  }
+  
+  #content{
+  height: 25px;
+  width: 170px;
+    
+  }
+  #submit {
+    display: flex;
+    justify-content: center;
+  }
+  #submit{
+   
+    display: flex;
+    justify-content: center;
+  }
