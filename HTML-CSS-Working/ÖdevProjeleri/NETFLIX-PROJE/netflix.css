@@ -7,25 +7,33 @@
 
 body {
 
-  background-image: url(../background_image.jpg);
+  background-image: url(./background_image.jpg);
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
   /* height: 100vh; */
   display: flex;
   justify-content: center;
-  margin-bottom: auto;
-  
+  /* margin-bottom: auto; */
+  margin: auto;
 
   
 }
+#container {
+  width: 95%;
+  background-color: rgb(21, 18, 18, 0.4);
+  margin: 2% auto;
+}
+
+
 #desciription {
+  text-align: center;
   color: white;
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
   font-size: 22px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom:10px;
 
   
 }
