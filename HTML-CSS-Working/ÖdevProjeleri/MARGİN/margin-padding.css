@@ -1,15 +1,21 @@
 * {
   margin: 0;
   padding: 0;
+  /* box-sizing: border-box; */
 }
+/* body{
+  /* text-align: center; */
 
 .container {
+  /* text-align: center; */
+
   background-color: aqua;
   /* ?ana div e her yönden 10px dıs uzaklık verdık  */
   margin: 10px;
   /*? ana divin iç hacmini her yönden 20px genişletik  */
 
   padding: 20px;
+  /* width: 200px; */
   /* text-align: center; */
 }
 

@@ -8,6 +8,10 @@ body {
   background-color: antiquewhite;
 } */
 
+body {
+  text-align: center;
+}
+
 h1 {
   color: red;
 }
@@ -30,5 +34,7 @@ li:hover {
   cursor: pointer;
 }
 .list {
-  border: 1px solid red;
+  display: inline-block;
+  border: 3px solid red;
+  padding: 40px;
 }
