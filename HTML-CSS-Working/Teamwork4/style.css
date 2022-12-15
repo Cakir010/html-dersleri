@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+div{
+
+    border: 2px solid blue;
+    width: 600px;
+    height: 250px;
+    padding: 20px;
+    margin: 100px auto;
+    overflow: auto;
+    
+}
+img{
+    width: 100px;
+    float: left;
+    /* padding-top: 20px; */
+    margin-right: 20px;
+}
+ 
+.özel{
+    padding-top: 30px;
+} 
+
+ /* .özel1{
+text-align: left;
+    padding-top: 20px;
+} */
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
