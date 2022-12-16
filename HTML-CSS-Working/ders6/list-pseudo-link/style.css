@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    /* padding: 0; */
+    
+}
+
+/* !===========================LİSTS====================== */
+
+.languages{
+    list-style-type: circle;
+    list-style-position: inside;
+
+
+
+}
+
+/* ! =================PSEUDO CLASS============== */
+
+
+ul.pseudo li{
+    background-color: aliceblue;
+    border: 1px solid green;
+    width:10rem ;
+    list-style-type: none;
+}
+ul.pseudo li:first-child{
+    background-color: red;
+    color: white;
+}
+
+ul.pseudo li:last-child{
+    background-color: red;
+    color: white;
+}
+
+ul.pseudo li:nth-child(4){
+    background-color: red;
+    color: white;
+}
+ul.pseudo li:nth-child(even){
+    background-color: red;
+    color: white;
+}
+
+ul.pseudo li:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+ul.pseudo li:active{
+    font-weight: 900;
+    color: blue;
+    
+}
+
+
+
+/* ! =================PSEUDO ELEMENTS============== */
+
+
+ul.pseudo li:before{
+    content: "😍";
+}
+ul.pseudo li:after{
+    content: "🤑🙄";
+}
+/* ul.pseudo li:last-child:before{
+    font-family: F;
+} */
+
+.ps-elements ::first-line{
+font-weight: 900;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

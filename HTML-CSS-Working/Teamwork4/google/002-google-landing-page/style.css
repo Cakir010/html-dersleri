@@ -63,15 +63,23 @@ section {
 }
 
 .box input{
-    padding: 10px 130px;
+  margin-left: 40px;
+    padding: 10px 140px;
     border-radius: 50px;
 }
 
-.box img{
-    
-    
+.box .stil{
+  /* border: 2px solid red; */
+  position:relative;
+  right:410px;
+  top:5px
 }
-
+.box .stil2{
+  /* background-color: red; */
+  position: relative;
+  right: 70px;
+  top: 5px;
+}
 section button{
      width: 120px;
     height: 30px;
