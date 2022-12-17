@@ -25,10 +25,19 @@ body {
 /* ======================================== */
 
 .nav-right {
+  position: relative;
+    bottom: 7px;
   float: right;
   margin-top: 0px;
 }
-
+.nav-right img{
+  position: relative ;
+ top: 10px;
+ 
+  /* background-color: red; */
+  height: 30px;
+  width: 30px;
+}
 .nav-right a:hover {
   text-decoration: underline;
 }
@@ -63,15 +72,19 @@ section {
 }
 
 .box input{
+  /* display: inline-block; */
+  border: 1px solid rgb(222, 226, 222);
   margin-left: 40px;
-    padding: 10px 140px;
+    padding: 15px 170px;
+    /* outline: rgb(255, 0, 0); */
     border-radius: 50px;
+    
 }
 
 .box .stil{
   /* border: 2px solid red; */
   position:relative;
-  right:410px;
+  right:470px;
   top:5px
 }
 .box .stil2{
@@ -81,19 +94,22 @@ section {
   top: 5px;
 }
 section button{
-     width: 120px;
-    height: 30px;
+     width: 125px;
+    height: 35px;
     margin-right: 10px;
     border: none;
     border-radius: 5px;
 }
 section button:hover{
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    /* background-color: rgba(0, 0, 0, 0.1); */
 }
 
 .box p{
+ 
     font-size: small;
+    
     
 }
 
