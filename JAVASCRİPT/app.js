@@ -1,29 +1,110 @@
-console.log("*****Operators******");
 
-console.log("*****Operators*****");
+let firstName = null
+console.log(firstName);
 
-const cola = 20;
-const chocolate = 5;
-const biscuits = 15;
-const totalPrice = cola + chocolate + biscuits;
-console.log(totalPrice);
 
-const comments = 50 + 40 + "TL";
-console.log(comments);
 
-const firstName = "Ahmet";
-const lastName = "Cakir";
-console.log(firstName + " " + lastName);
+// !TOPLAMA CIKARMA İŞLEMİ===========
 
-const s1 = 5;
-s2 = "7";
+let sayı1=5
+let sayı2=6
 
-s3 = "three";
-console.log(s1 + s2);
+let sum = sayı1 + sayı2
+console.log(sum);
 
-console.log(s1 + s2);
-console.log(s1 - s2);
-console.log(s1 - s3);
+
+//! ÇEMBERİN ALANI HESAPLA===============
+
+const pi =3.14
+let radius=100
+
+const areaOfCircle =pi * radius * radius
+console.log(areaOfCircle);
+
+
+//! BİR CİSMİN AGIRLIGI HESAPLA
+
+const gravity = 9.81
+let mass= 72
+
+const weight= gravity* mass
+console.log(weight);
+
+
+
+// !==============================================
+
+
+// ?=========ARTIRMA OPERATÖRLERİ================
+
+
+//! =================================================
+
+
+let count = 0 
+
+console.log(count++);
+console.log(count);
+
+
+
+// ================ÜÇLÜ OPERATÖRLER ===========
+
+let isRaining = true
+// isRaining
+console.log('you need a rain coat');
+console.log('no need for a rain coat');
+
+
+// !ÖR1
+
+// let number = 5
+// number > 5 
+// console.log(`${number} is a positive number `);
+// console.log(`${number} is a negative number`)
+// number = -5
+
+
+// alert('JAVASCRİPTE HOŞGELDİNİZ')
+
+
+// prompt ('required text' , 'optional text')
+
+let number = prompt ('enter number')
+console.log(number);
+
+
+
+
+
+
+
+// console.log("*****Operators******");
+
+// console.log("*****Operators*****");
+
+// const cola = 20;
+// const chocolate = 5;
+// const biscuits = 15;
+// const totalPrice = cola + chocolate + biscuits;
+// console.log(totalPrice);
+
+// const comments = 50 + 40 + "TL";
+// console.log(comments);
+
+// const firstName = "Ahmet";
+// const lastName = "Cakir";
+// console.log(firstName + " " + lastName);
+
+// const s1 = 5;
+// s2 = "7";
+
+// s3 = "three";
+// console.log(s1 + s2);
+
+// console.log(s1 + s2);
+// console.log(s1 - s2);
+// console.log(s1 - s3);
 
 // ============================================
 
@@ -31,11 +112,11 @@ console.log(s1 - s3);
 
 // ===========================================
 
-const v1 = true;
-const v2 = false;
+// const v1 = true;
+// const v2 = false;
 
-console.log(v1 && v2);
-console.log(v1 || v2);
+// console.log(v1 && v2);
+// console.log(v1 || v2);
 
 
 
@@ -52,24 +133,24 @@ console.log(v1 || v2);
 
 
 // ?Javascripte 6 adet falsy deger vardır
-const nal= null;
-const tanimsiz =undefined;
-const bos =""
-const falsy= false
-const sifir = 0
-const sayiDegil = NaN
+// const nal= null;
+// const tanimsiz =undefined;
+// const bos =""
+// const falsy= false
+// const sifir = 0
+// const sayiDegil = NaN
 
 
-console.log(v1 &&  false && null & true && true); // ? false
-console.log(v1 || 0);
+// console.log(v1 &&  false && null & true && true); // ? false
+// console.log(v1 || 0);
 
-const num5 =0
-if (num5 === true)
-{
-    console.log("sayi sifir degildir");
-} else { 
-    console.log("sayi sifirdir");
-}
+// const num5 =0
+// if (num5 === true)
+// {
+//     console.log("sayi sifir degildir");
+// } else { 
+//     console.log("sayi sifirdir");
+// }
 
 
 // ===================================================
@@ -79,21 +160,21 @@ if (num5 === true)
 // ===================================================
 
 
-const dolar ="1000"
-const tl = "500"
+// const dolar ="1000"
+// const tl = "500"
 
-const totalMoney = Number(dolar) + Number(tl) 
-const totalMoney1 = +dolar + +tl 
-const totalMoney2=parseInt(dolar)+parseInt(tl)
-const totalMoney3=parseFloat(dolar)+parseFloat(tl)
+// const totalMoney = Number(dolar) + Number(tl) 
+// const totalMoney1 = +dolar + +tl 
+// const totalMoney2=parseInt(dolar)+parseInt(tl)
+// const totalMoney3=parseFloat(dolar)+parseFloat(tl)
 
-console.log(totalMoney2);
-console.log(Number(null));// 0
-console.log(Number("12.3")); //12.3
-console.log(Number("1ab")); //NaN
-console.log(Number("0b101")); //5  binary 
-console.log(Number("0x10")); //16 hexadesimal
-console.log(String(55));
+// console.log(totalMoney2);
+// console.log(Number(null));// 0
+// console.log(Number("12.3")); //12.3
+// console.log(Number("1ab")); //NaN
+// console.log(Number("0b101")); //5  binary 
+// console.log(Number("0x10")); //16 hexadesimal
+// console.log(String(55));
 
 
 // ==============================================================
@@ -118,17 +199,17 @@ console.log(String(55));
 // conselden  girilen 3 tamsayının en büyügünü bulan  programı yazınız
 
 
-const n1 = prompt("number1")
-const n2 = prompt("number2")
-const n3 = prompt("number3")
+// const n1 = prompt("number1")
+// const n2 = prompt("number2")
+// const n3 = prompt("number3")
 
-if (n1>=n2 && n1 >=n3){
-    console.log(`${n1} is big`);
-}else if (n2>=n1 && n2 >=n3){
-    console.log(`${n2} is big`);
-}else if(n3>=n1 && n3 >=n2) {
-    console.log(`${n3} is big`);
-}
+// if (n1>=n2 && n1 >=n3){
+//     console.log(`${n1} is big`);
+// }else if (n2>=n1 && n2 >=n3){
+//     console.log(`${n2} is big`);
+// }else if(n3>=n1 && n3 >=n2) {
+//     console.log(`${n3} is big`);
+// }
 
 
 // 2.yöntem
@@ -172,31 +253,31 @@ if (n1>=n2 && n1 >=n3){
 
 // ========================================================================
 
-console.log("-------------------------------------")
-console.log(" ***** 4 Islem Hesap Makinasi ****** ")
-console.log("-------------------------------------")
-const sayı1 = Number(prompt("1.Sayiyi Giriniz:"))
-const islem = prompt("Islemi giriniz: +,-,*, /")
-const sayı2 = +prompt("2.Sayiyi Giriniz:")
-let sonuc = 0
-switch (islem) {
-  case "+":
-    sonuc = sayı1 + sayı2
-    break
-  case "-":
-    sonuc = sayı1 - sayı2 
-    break
-  case "*":
-    sonuc = sayı1 * sayı2
-    break
-  case "/":
-    sonuc = sayı1 / sayı2
-    break
-  default:
-    alert("Yanlıs islem girisi")
-    break
-}
-console.log(`${sayı1} ${islem} ${sayı2} = ${sonuc}`)
+// console.log("-------------------------------------")
+// console.log(" ***** 4 Islem Hesap Makinasi ****** ")
+// console.log("-------------------------------------")
+// const sayı1 = Number(prompt("1.Sayiyi Giriniz:"))
+// const islem = prompt("Islemi giriniz: +,-,*, /")
+// const sayı2 = +prompt("2.Sayiyi Giriniz:")
+// let sonuc = 0
+// switch (islem) {
+//   case "+":
+//     sonuc = sayı1 + sayı2
+//     break
+//   case "-":
+//     sonuc = sayı1 - sayı2 
+//     break
+//   case "*":
+//     sonuc = sayı1 * sayı2
+//     break
+//   case "/":
+//     sonuc = sayı1 / sayı2
+//     break
+//   default:
+//     alert("Yanlıs islem girisi")
+//     break
+// }
+// console.log(`${sayı1} ${islem} ${sayı2} = ${sonuc}`)
 
 
 
@@ -215,27 +296,27 @@ console.log(`${sayı1} ${islem} ${sayı2} = ${sonuc}`)
 
 // 2.Yöntem
 
-const grade = +prompt("please enter your grade:?")
+// const grade = +prompt("please enter your grade:?")
 
-const result =
-grade >= 50 
+// const result =
+// grade >= 50 
 
-?  `you are succesful with ${grade}`
-:  `you are failed with ${grade}`
-console.log(result);
+// ?  `you are succesful with ${grade}`
+// :  `you are failed with ${grade}`
+// console.log(result);
 
-// ====================================
+// // ====================================
 
-// Ör:
+// // Ör:
 
-const gender ="male"
-const  age= 20
-const healty =true
-const status ="Teacher"
+// const gender ="male"
+// const  age= 20
+// const healty =true
+// const status ="Teacher"
 
-age>=18 && gender === "male && healty === true"
-? alert ("Military service is required")
-: alert ("Military service is not required")
+// age>=18 && gender === "male && healty === true"
+// ? alert ("Military service is required")
+// : alert ("Military service is not required")
 
 
 // ==============================================================
