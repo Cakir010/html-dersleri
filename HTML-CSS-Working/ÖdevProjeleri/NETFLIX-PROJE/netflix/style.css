@@ -66,13 +66,15 @@ span{
     color: red;
 }
 
-#survey-form {
+#survey-form-container {
   font-family: Arial, Helvetica, sans-serif;
   background: #000000;
   opacity: 0.8;
+
   width: fit-content;
   margin: auto;
-  padding: 45px;
+  padding: 30px 90px;
+  
   /* text-align: center; */
 }
 .box {
