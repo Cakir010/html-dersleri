@@ -1,77 +1,77 @@
 
-let firstName = null
-console.log(firstName);
+// let firstName = null
+// console.log(firstName);
 
 
 
-// !TOPLAMA CIKARMA İŞLEMİ===========
+// // !TOPLAMA CIKARMA İŞLEMİ===========
 
-let sayı1=5
-let sayı2=6
+// let sayı1=5
+// let sayı2=6
 
-let sum = sayı1 + sayı2
-console.log(sum);
-
-
-//! ÇEMBERİN ALANI HESAPLA===============
-
-const pi =3.14
-let radius=100
-
-const areaOfCircle =pi * radius * radius
-console.log(areaOfCircle);
+// let sum = sayı1 + sayı2
+// console.log(sum);
 
 
-//! BİR CİSMİN AGIRLIGI HESAPLA
+// //! ÇEMBERİN ALANI HESAPLA===============
 
-const gravity = 9.81
-let mass= 72
+// const pi =3.14
+// let radius=100
 
-const weight= gravity* mass
-console.log(weight);
-
-
-
-// !==============================================
+// const areaOfCircle =pi * radius * radius
+// console.log(areaOfCircle);
 
 
-// ?=========ARTIRMA OPERATÖRLERİ================
+// //! BİR CİSMİN AGIRLIGI HESAPLA
 
+// const gravity = 9.81
+// let mass= 72
 
-//! =================================================
-
-
-let count = 0 
-
-console.log(count++);
-console.log(count);
+// const weight= gravity* mass
+// console.log(weight);
 
 
 
-// ================ÜÇLÜ OPERATÖRLER ===========
-
-let isRaining = true
-// isRaining
-console.log('you need a rain coat');
-console.log('no need for a rain coat');
+// // !==============================================
 
 
-// !ÖR1
-
-// let number = 5
-// number > 5 
-// console.log(`${number} is a positive number `);
-// console.log(`${number} is a negative number`)
-// number = -5
+// // ?=========ARTIRMA OPERATÖRLERİ================
 
 
-// alert('JAVASCRİPTE HOŞGELDİNİZ')
+// //! =================================================
 
 
-// prompt ('required text' , 'optional text')
+// let count = 0 
 
-let number = prompt ('enter number')
-console.log(number);
+// console.log(count++);
+// console.log(count);
+
+
+
+// // ================ÜÇLÜ OPERATÖRLER ===========
+
+// let isRaining = true
+// // isRaining
+// console.log('you need a rain coat');
+// console.log('no need for a rain coat');
+
+
+// // !ÖR1
+
+// // let number = 5
+// // number > 5 
+// // console.log(`${number} is a positive number `);
+// // console.log(`${number} is a negative number`)
+// // number = -5
+
+
+// // alert('JAVASCRİPTE HOŞGELDİNİZ')
+
+
+// // prompt ('required text' , 'optional text')
+
+// let number = prompt ('enter number')
+// console.log(number);
 
 
 
@@ -320,11 +320,130 @@ console.log(number);
 
 
 // ==============================================================
-//                LEVENT HOCAYLA YAPILAN ÖDEVLER 
+//                SELMAN HOCA İLE YAPILAN ÖRNEKLER
 // ==============================================================
 
 
+//? Soru-1  1000 ile 2000 arasındaki 13 e bölümünden 3 kalan sayıları konsola yazdırınız ?
 
+// let x = 16
+// for (let i =1000 ; i<2000 ; i++ ){
+// if (i%13 ==3)
+// console.log(i);
+// }
+
+//? Soru-2  Kullanıcıdan alınan 5 sayının ortalamasını konsola yazdırınız ?
+//! CEVAP : BİR YERDE TEKRAR VARSA ORDA LOOPS VARDIR ! 
+
+
+// let sayac =0;
+// let sum =0 //!Let kullanmamızın sebebi sayacın degisecegindendir
+// while (sayac < 5){
+
+//     const sayı=prompt('bir sayı giriniz')
+// sum += sayı
+//     sayac ++
+// }
+// console.log(sum / sayac );
+
+//? Soru-3 Kullanıcıdan alınan sayıları negatif girilene kadar toplayan ve konsola yazan kodu yazınız ?
+
+
+
+// let sum = 0     yanlıs çözüm
+// let flag =true
+// while (flag){ 
+// const sayı= +prompt('bir sayı giriniz')
+// if(sayı < 0){
+//     flag = false {
+
+//     }
+//         else
+//     }
+  
+// }
+// sum+= sayı
+// }
+// console.log(sum);
+
+
+
+//? Soru-4 Sizden 1'den 100'e kadar sayıları yazdırmanız istenmektedir ancak 3'ün katlarına gelince 'Fizz',5'in katlarına gelince 'Buzz'.Hem 3'ün hemde 5'in katlarına gelince 'FizzBuzz' yazdırmanız istenmektedir ?
+
+for(let i=1; i<=100;i++){
+console.log(i);
+if(i%15===0){
+    console.log('fizzBuzz')
+}else if (i % 5 ===0){
+    console.log('buzz')
+}else if (i%3===0){
+    console.log('fizz');
+}else{
+
+    console.log(i);
+}
+}
+
+//? Soru-5 bir sayının(number) basamak sayısını yazdıran kodu yazınız ?
+// let sayi = 34134134636363634634
+// let basamak = 0 
+// while (true){
+//     sayi= Math.floor(sayi/ 10)
+//     basamak++
+// if(sayi == 0){
+//     break
+// }
+
+// }
+// console.log(basamak);
+
+
+//? Soru-6 Kullanıcıdan alınan n adet kadar olan Fibonacci dizisini konsola yazdırınız ?  //0 1 1 2 3 5 8 13
+
+
+//? soru-7 Aşağıdaki çıktıyı konsola yazdırınız ?
+//? * * * * *
+//? * * * * *
+//? * * * * *
+//? * * * * *
+//? * * * * *
+
+for(let i = 1 ;i<=5;i++){
+    let result =''
+    for(let j = 1 ;j<=5;j++){
+        result +=' *'
+        
+        
+}
+console.log('\n');
+console.log(result);
+}
+
+   
+
+
+
+
+
+
+
+
+
+//? soru-8 Aşağıdaki çıktıyı konsola yazdırınız ?
+//? O
+//? OO
+//? OOO
+//? OOOO
+//? OOOOO
+//? OOOOOO
+//? OOOOOOO
+
+
+//? soru-9 Aşağıdaki çıktıyı konsola yazdırınız ?
+//?    O
+//?   OOO
+//?  OOOOO
+//? OOOOOOO
 
 
 
