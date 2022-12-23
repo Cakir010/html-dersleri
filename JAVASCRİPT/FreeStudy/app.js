@@ -1,7 +1,118 @@
+let number1='11'
+number1= parseInt(number1)
+console.log('number1:', number1, typeof(number1));
+
+let number2= "11"
+number2= parseInt((number2))
+console.log("number2:" , number2 , typeof(number2));
+
+
+// ===============STRİNG İFADELER =================
+
+ let email = 'ynsckr01@gmail.com'
+let firstName = 'yunus emre'
+let lastName = 'CAKİR'
+
+// karakter sayısını ögrenmek ===================
+
+console.log(email.length);
+
+// İLK KARAKTERİ BULMAK =======================
+
+console.log(firstName[0]);
+
+// BÜYÜK - KÜÇÜK HARF YAPMA =====================
+
+firstName= firstName.toUpperCase()    
+console.log(firstName);
+
+firstName= firstName.toLowerCase()
+console.log(firstName);
+
+// string içindeki bir bilgiyi aramak yerini bulmak 
+
+console.log(email.search('@'));
+console.log(email[15]);
+
+// BELLİ BİR YERE KADAR OLANI ALMAK ================= slice
+
+ let DOMAIN = email.slice ( email.search('@')+ 1)
+console.log(DOMAIN);
+
+// biligiy degiştirmek .==============
+
+email= email.replace('gmail.com' , 'kodluyoruz.org')
+console.log(email);
+
+//İSTEDİĞİM BİLGİ VARMI ? ============================
+
+email.includes('dasdads')
+email.includes('@')
+
+
+// ?================================================================
+//? =============================================================
+
+//! ==========KARŞILAŞTIRMA VE MANTIKSAL OPERATÖRLER============== 
+
+// ?==========================================================
+//? ================================================================
+
+let price ='100'
+let user= 'quest'
+
+
+// =====EŞİTSE 
+
+console.log(price==1);
+console.log(price ==100);
+//======= HEM DEĞERİHE DE TÜRÜ EŞİTSE 
+console.log(price === 1);
+console.log(price === '100');
+
+
+// EŞİT DEĞİLSE !=   =================
+
+console.log(user != 'quest');
+
+// KÜÇÜKSE==============
+console.log(price <= 100);
+
+
+// BÜYÜKSE===============
+console.log(price >= 100);  //sadece büyükse false ama büyük eşitse true
+
+
+// BÜYÜK VEYA EŞİTSE=================
+
+console.log(price >=100);
+
+// && VE DEĞERİ ================
+price = 0 
+console.log(price > 0 || user != 'quest');
+
+// || VEYA  DEĞERİ =======================
+
+console.log(price > 0 || user =='quest' );
+
+
+// !===================== IF YAPISI =================
+
+
+// ÖRNEK: EGER KULLANII BILGISI VARSA EKRANA YAZDIR 
+
+
+
+
+
+
+
+
+
+
 
 // let firstName = null
 // console.log(firstName);
-
 
 
 // // !TOPLAMA CIKARMA İŞLEMİ===========
@@ -370,19 +481,19 @@
 
 //? Soru-4 Sizden 1'den 100'e kadar sayıları yazdırmanız istenmektedir ancak 3'ün katlarına gelince 'Fizz',5'in katlarına gelince 'Buzz'.Hem 3'ün hemde 5'in katlarına gelince 'FizzBuzz' yazdırmanız istenmektedir ?
 
-for(let i=1; i<=100;i++){
-console.log(i);
-if(i%15===0){
-    console.log('fizzBuzz')
-}else if (i % 5 ===0){
-    console.log('buzz')
-}else if (i%3===0){
-    console.log('fizz');
-}else{
+// for(let i=1; i<=100;i++){
+// console.log(i);
+// if(i%15===0){
+//     console.log('fizzBuzz')
+// }else if (i % 5 ===0){
+//     console.log('buzz')
+// }else if (i%3===0){
+//     console.log('fizz');
+// }else{
 
-    console.log(i);
-}
-}
+//     console.log(i);
+// }
+// }
 
 //? Soru-5 bir sayının(number) basamak sayısını yazdıran kodu yazınız ?
 // let sayi = 34134134636363634634
@@ -408,16 +519,16 @@ if(i%15===0){
 //? * * * * *
 //? * * * * *
 
-for(let i = 1 ;i<=5;i++){
-    let result =''
-    for(let j = 1 ;j<=5;j++){
-        result +=' *'
+// for(let i = 1 ;i<=5;i++){
+//     let result =''
+//     for(let j = 1 ;j<=5;j++){
+//         result +=' *'
         
         
-}
-console.log('\n');
-console.log(result);
-}
+// }
+// console.log('\n');
+// console.log(result);
+// }
 
    
 
