@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .clarusway-background,
+  .clarusway-background2,
+  .clarusway-background3,
+  .clarusway-background4 {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    opacity: 0.7;
+  }
+  
+  .clarusway-background {
+    height: 100vh;
+    background-image: url(./img/bg.jpg);
+  }
+  
+  .clarusway-background2 {
+    height: 70vh;
+    background-image: url(./img/bg2.jpg);
+  }
+  
+  .clarusway-background3 {
+    height: 80vh;
+    background-image: url(./img/bg3.jpg);
+  }
+  
+  .clarusway-background4 {
+    height: 80vh;
+    background-image: url(./img/bg4.jpg);
+  }
+  
+  span {
+    background-color: black;
+    color: white;
+    font-size: 48px;
+    letter-spacing: 8px;
+  }
+  
+  .span-big {
+    padding: 32px;
+    border-top-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    outline: 8px inset purple;
+    outline-offset: 16px;
+  }
+  
+  .span-small {
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: 6px inset purple;
+    outline-offset: 4px;
+  }
+  
+  h1 {
+    padding-top: 70px;
+  }
+  
+  p {
+    padding: 30px 80px 50px;
+    line-height: 2;
+  }
+  
+  .section-white {
+    background-color: rgb(241, 241, 241);
+    color: #666;
+  }
+  
+  .section-black {
+    background-color: #282e34;
+    color: #ddd;
+  }
+  
+  img {
+    width: 30%;
+  }
+  
+  @media only screen and (max-width: 1400px) {
+    span {
+      font-size: 35px;
+      letter-spacing: 6px;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    span {
+      font-size: 25px;
+      letter-spacing: 4px;
+    }
+    p {
+      padding: 25px 50px 40px;
+      line-height: 1.6;
+    }
+    .clarusway-background,
+    .clarusway-background2,
+    .clarusway-background3,
+    .clarusway-background4 {
+      height: 80vh;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    span {
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+    p {
+      padding: 15px 30px 20px;
+      line-height: 1.4;
+    }
+    h1 {
+      padding-top: 30px;
+    }
+    .clarusway-background,
+    .clarusway-background2,
+    .clarusway-background3,
+    .clarusway-background4 {
+      height: 50vh;
+    }
+  }
