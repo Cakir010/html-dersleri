@@ -99,7 +99,90 @@ console.log(price > 0 || user =='quest' );
 // !===================== IF YAPISI =================
 
 
-// ÖRNEK: EGER KULLANII BILGISI VARSA EKRANA YAZDIR 
+// EHLİYET ÖRNEGİ=========================
+
+// let usurName = prompt('kullanıcı adınız: ')
+// let age= prompt('yaşınız:')
+
+// if (usurName && age >=18){
+//     console.log('ehliyet alablir');
+// }else if (!usurName){
+//     console.log('kullanıcı adı girilmedi');
+// }else if (!(age >=18)){
+//     console.log('yaşınızı giriniz veya 18 yasından kucuksunuz ');
+// }
+
+// ASKERE GİDER ÖRNEĞİ ============================
+
+// let usurName = prompt('kimlikteki ad ve soyadınız: ')
+// let age = prompt('yaşınızı giriniz:')
+// let city = prompt('şehir giriniz')
+
+// if (usurName && age >=18 && city){
+//     console.log('askere gidebilir');
+// }else if (!usurName){
+//     console.log('adınızı girmediniz');
+// }else if (!(age >=18)){
+//     console.log('yaşınız küçük veya yaş giriniz');
+// }else  if(!city){
+//     console.log('şehir girinizz');
+// }
+
+
+// EVLENME ÖRNEGİ=============================
+
+let home = prompt('Ev bilgisi gir:')
+let car= prompt('araç bilgisi gir:')
+
+if (home && car )
+console.log('evlenebilirsin' );
+else if (!home){
+    console.log('eviniz yok veya varda söylemiyorsunuz');
+}else if (!car){
+    console.log('aracınız yok evlenemezsiniz');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
