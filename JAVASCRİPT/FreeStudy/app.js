@@ -490,11 +490,10 @@ console.log(price > 0 || user == "quest");
 // gelir - gider >= 5500  ? 'kredi kullanablir' : 'kredi kullanamaz'
 // console.log(kredi);
 
-
 //! ========================================
 // ?0 - 100 TAHMİN OYUNU
 // do{
-// let deneme = 5 
+// let deneme = 5
 // let tahmin
 // const randomNumber = Math.round(Math.random() * 100)
 
@@ -515,12 +514,7 @@ console.log(price > 0 || user == "quest");
 // again = confirm('tekrar oynamak istermisiniz')
 // }while(again)
 
-
 // !===========================================================
-
-
-
-
 
 // let firstName = null
 // console.log(firstName);
@@ -803,9 +797,8 @@ console.log(price > 0 || user == "quest");
 // !======================================================================================
 //! ========================FOR WHİLE ÖRNEKLER ====================================
 
-
 // const n = +prompt('sayı gir')
-// let sum = 0 
+// let sum = 0
 // for (let i =1 ; i <= n ; i++){
 //     sum += i
 // }
@@ -814,33 +807,139 @@ console.log(price > 0 || user == "quest");
 // !======================================
 // 0-100 ARASINDA N ADET RASTGELE TAMSAYI ÜRETEN KOD
 
-// const num = +prompt('Enter a number')
+// const num = +prompt('Enter a number2')
 
 // for(let j=0 ; j < num ; j++){
 //     const randomNum = Math.round(Math.random() * 100)
 //     console.log(`${j}. random number : ${randomNum}`);
-// } 
+// }
+
+// let sayi = +prompt ('Enter a sayi')
+// for (let i = 0; i<sayi ; i++){
+//     const randomNum =  Math.round(Math.random() * 100)
+//     console.log(`${i} randomNum: ${randomNum}`);
+// }
 
 // !=================================================================
 // GİRİLEN SAYININ ASAL OLUP OLMDGNI YAZAN KOD
 
+// let primeNum =+prompt('enter a number')
 
-let primeNum =+prompt('enter a number')
+// let isPrime = true
+// if(primeNum< 2){
+//     console.log('sayi 1 den büyük ');
+// }else {
+//     for ( let i = 2 ; i < primeNum ; i++){
+//         if(primeNum % i === 0 ){
+//             console.log('is not prime' );
+//             isPrime=false
+//         }
+//     }
+// }
+// if ( isPrime=== true){
+//     console.log('prime number');
+// }
 
-let isPrime = true 
-if(primeNum< 2){
-    console.log('sayi 1 den büyük ');
-}else {
-    for ( let i = 2 ; i < primeNum ; i++){
-        if(primeNum % i === 0 ){
-            console.log('is not prime' );
-            isPrime=false
-        }
+// let primeNum =+prompt ('enter a number')
+// let isPrime = true
+// if (primeNum<2){
+//     console.log('sayi 1 den büyük');
+// }else{
+//     for(let i=2 ; i < primeNum ; i++){
+//         if(primeNum % i === 0){
+//             console.log('is not prime number');
+//             isPrime=false
+//         }
+//     }
+// }
+// if (isPrime=== true){
+//     console.log('prime number');
+// }
+
+//! =======================================WHİLE============
+
+//? ORNEK: Kullanicidan 0-100 arasinda bir not isteyen ve girilen not
+//? 0-100'den farkli ise Kullaciniyi uyararak yeniden 0-100 arasinda
+//? not girmeye zorlayan kodu while dongusu ile yaziniz.
+
+// let grade = +prompt("your grade");
+
+// while ( grade <0 || grade > 100){
+// console.log('grade should be 0-100');
+// grade = +prompt('your grade')
+// }
+
+// for (; grade < 0 || grade > 100; ) {
+//       console.log("Grade should be 0-100")
+//       grade = Number(prompt("your grade:"))
+//     }
+    
+//     console.log(`Your grade: ${grade}`)
+    
+//     if (grade < 0 || grade > 100) {
+//       console.log("Incorrect grade")
+//     }
+// ===========================
+
+
+// let not = +prompt('senin notun')
+
+// while (not < 0 || not > 100){
+//     console.log('grade should be ');
+//     not =+prompt('your not')
+// }
+// for (; not <0 || not > 100;){
+//     console.log('grade should be 0-100 ');
+//     not =prompt('your grade')
+// }
+// console.log(`your grade ${not}`)
+
+// if (not < 0 || not > 100) {
+//           console.log("Incorrect grade")
+//         }
+
+
+
+
+
+// // 
+//         let n = +prompt("sayi giriniz");
+//         let fak = (n) => {
+//           if (n == 0) return 1;
+//           else return n * fak(n - 1);
+//         };
+//         console.log(fak(n));
+
+
+
+
+// const factorial=(num)=>{
+//     if(num<0){
+//       console.log(`The number should be bigger or equal than zero `);
+//     }else if (num===0){
+//       return 1
+//     }else{
+//       return num*factorial(num-1)
+//     }
+//   }
+//   let num=+prompt("Enter a number")
+//   console.log(`${num}! = ${factorial(num)}`);
+
+
+
+//! ==========FAKTORİYEL HESAPLAMA ORNEGİ============
+
+const fakt = (number) => {
+    if(number < 0 ){
+        console.log(' Sıfırdan büyük sayı giriniz');
+    }else if ( number == 0 ){
+        return 1
+    }else {
+        return number* fakt(number-1)
     }
 }
-if ( isPrime=== true){
-    console.log('prime number');
-}
+const number= +prompt('Bir sayı giriniz')
+console.log(`${number} ! ${fakt(number)}`);
 
 
 
@@ -857,6 +956,18 @@ if ( isPrime=== true){
 
 
 
+
+
+// let x= +prompt('Enter number');
+// let fak = (x) => {
+//     if(x== 0) return 1;
+// else return x * fak(x - 1);
+// }
+// console.log(`${x} fak (x)`);
+
+
+
+// const fakt = 
 
 
 
