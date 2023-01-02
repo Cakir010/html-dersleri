@@ -740,33 +740,33 @@ console.log(price > 0 || user == "quest");
 
 // ========================================================================
 
-// console.log("-------------------------------------")
-// console.log(" ***** 4 Islem Hesap Makinasi ****** ")
-// console.log("-------------------------------------")
-// const sayı1 = Number(prompt("1.Sayiyi Giriniz:"))
-// const islem = prompt("Islemi giriniz: +,-,*, /")
-// const sayı2 = +prompt("2.Sayiyi Giriniz:")
-// let sonuc = 0
-// switch (islem) {
-//   case "+":
-//     sonuc = sayı1 + sayı2
-//     break
-//   case "-":
-//     sonuc = sayı1 - sayı2
-//     break
-//   case "*":
-//     sonuc = sayı1 * sayı2
-//     break
-//   case "/":
-//     sonuc = sayı1 / sayı2
-//     break
-//   default:
-//     alert("Yanlıs islem girisi")
-//     break
-// }
-// console.log(`${sayı1} ${islem} ${sayı2} = ${sonuc}`)
+console.log("-------------------------------------")
+console.log(" ***** 4 Islem Hesap Makinasi ****** ")
+console.log("-------------------------------------")
+const sayı1 = Number(prompt("1.Sayiyi Giriniz:"))
+const islem = prompt("Islemi giriniz: +,-,*, /")
+const sayı2 = +prompt("2.Sayiyi Giriniz:")
+let sonuc = 0
+switch (islem) {
+  case "+":
+    sonuc = sayı1 + sayı2
+    break
+  case "-":
+    sonuc = sayı1 - sayı2
+    break
+  case "*":
+    sonuc = sayı1 * sayı2
+    break
+  case "/":
+    sonuc = sayı1 / sayı2
+    break
+  default:
+    alert("Yanlıs islem girisi")
+    break
+}
+console.log(`${sayı1} ${islem} ${sayı2} = ${sonuc}`)
 
-// ==================================TERNARY=====================================
+==================================TERNARY=====================================
 
 // ÖRNEK : KALDI - GECTİ
 
@@ -826,24 +826,24 @@ console.log(price > 0 || user == "quest");
 // }
 
 // !=================================================================
-// GİRİLEN SAYININ ASAL OLUP OLMDGNI YAZAN KOD
+GİRİLEN SAYININ ASAL OLUP OLMDGNI YAZAN KOD
 
-// let primeNum =+prompt('enter a number')
+let primeNum =+prompt('enter a number')
 
-// let isPrime = true
-// if(primeNum< 2){
-//     console.log('sayi 1 den büyük ');
-// }else {
-//     for ( let i = 2 ; i < primeNum ; i++){
-//         if(primeNum % i === 0 ){
-//             console.log('is not prime' );
-//             isPrime=false
-//         }
-//     }
-// }
-// if ( isPrime=== true){
-//     console.log('prime number');
-// }
+let isPrime = true
+if(primeNum< 2){
+    console.log('sayi 1 den büyük ');
+}else {
+    for ( let i = 2 ; i < primeNum ; i++){
+        if(primeNum % i === 0 ){
+            console.log('is not prime' );
+            isPrime=false
+        }
+    }
+}
+if ( isPrime=== true){
+    console.log('prime number');
+}
 
 // let primeNum =+prompt ('enter a number')
 // let isPrime = true
@@ -857,6 +857,7 @@ console.log(price > 0 || user == "quest");
 //         }
 //     }
 // }
+
 // if (isPrime=== true){
 //     console.log('prime number');
 // }
@@ -867,23 +868,23 @@ console.log(price > 0 || user == "quest");
 //? 0-100'den farkli ise Kullaciniyi uyararak yeniden 0-100 arasinda
 //? not girmeye zorlayan kodu while dongusu ile yaziniz.
 
-// let grade = +prompt("your grade");
+let grade = +prompt("your grade");
 
-// while ( grade <0 || grade > 100){
-// console.log('grade should be 0-100');
-// grade = +prompt('your grade')
-// }
+while ( grade <0 || grade > 100){
+console.log('grade should be 0-100');
+grade = +prompt('your grade')
+}
 
-// for (; grade < 0 || grade > 100; ) {
-//       console.log("Grade should be 0-100")
-//       grade = Number(prompt("your grade:"))
-//     }
+for (; grade < 0 || grade > 100; ) {
+      console.log("Grade should be 0-100")
+      grade = Number(prompt("your grade:"))
+    }
     
-//     console.log(`Your grade: ${grade}`)
+    console.log(`Your grade: ${grade}`)
     
-//     if (grade < 0 || grade > 100) {
-//       console.log("Incorrect grade")
-//     }
+    if (grade < 0 || grade > 100) {
+      console.log("Incorrect grade")``
+    }
 // ===========================
 
 
