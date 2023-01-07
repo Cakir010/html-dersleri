@@ -63,17 +63,50 @@ const dolarPrices = tlPrices.map((tl) => Number((tl / dolar).toFixed(2)))
 
 console.log(euroPrices, dolarPrices)
 
-//* =======================================
-//*          CHAINING (PIPELINE)
-//* =======================================
+
 
 //* =======================================
 //*             FILTER METHOD
 //* =======================================
 
+const salaries = [5500 , 8000 , 6500 , 9000, 10000, 15000 , 25000]
+const moreThan10000 = salaries.filter((s) => s >= 10000)
+console.log(moreThan10000);
+
+
+//* =======================================
+//*          CHAINING (PIPELINE)
+//* =======================================
+
+const lessThan9000Inc = salaries
+.filter((s) => s < 9000)
+.map((s) => Math.trunc(s * 1.1))
+
+console.log(lessThan9000Inc);
+
+
 //* =======================================
 //*             REDUCE METHOD
 //* =======================================
+
+// const salaries = [5500 , 8000 , 6500 , 9000, 10000, 15000 , 25000]
+
+const totalSalary = salaries.reduce((t,s) => t + s)
+console.log(totalSalary);
+
+
+
+
+// =============================
+
+
+
+
+
+
+
+
+
 
 //* =======================================
 //*               OTHERS
