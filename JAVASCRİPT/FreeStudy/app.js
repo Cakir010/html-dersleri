@@ -1122,11 +1122,11 @@ for (; grade < 0 || grade > 100; ) {
 // 1- Celsius değerini Fahrenheit değerine dönüştüren bir fonksiyon yazınız? (Celsius × 9/5) + 32 = Fahrenheit
 // console.log(calFahrenheit(30)) // output: 86
 
-function calFahrenheit(cel){
-const fahr = cel * (9/5) + 32
-return cel + ' derece ' +  fahr +  ' fahrenheit a eşittir'
-}
-console.log(calFahrenheit(30));
+// function calFahrenheit(cel){
+// const fahr = cel * (9/5) + 32
+// return cel + ' derece ' +  fahr +  ' fahrenheit a eşittir'
+// }
+// console.log(calFahrenheit(30));
 
 
 
@@ -1152,20 +1152,20 @@ console.log(calFahrenheit(30));
 
 
 
-let str= 'Selamun Aleykum'
-function reverseString (str){
-    let str2 ='';
-for (let i =str.length -1 ; i >= 0 ; i--){   // yatay 
+// let str= 'Selamun Aleykum'
+// function reverseString (str){
+//     let str2 ='';
+// for (let i =str.length -1 ; i >= 0 ; i--){   // yatay 
     
-str2 += str[i]
-return str2
-}
+// str2 += str[i]
+// return str2
+// }
 
 
-}
+// }
 
-// console.log('selam'[4]);
-console.log(reverseString('hello world'))
+// // console.log('selam'[4]);
+// console.log(reverseString('hello world'))
 
 
 
@@ -1220,7 +1220,22 @@ console.log(reverseString('hello world'))
 
 
 
+function isAnagram(a, b) {
+  let counter = 0;
+  for (let i of a) {
+    for (let j of b) {
+      if (i === j) {
+        counter++;
+      }
+    }
+  }
+  return a.length < counter
+    ? `True, The word ${a} is an anagram of ${b}`
+    : `false, Characters do not match for test case ${a}, ${b}`;
+}
 
+console.log(isAnagram("foefet", "toffee"));
+console.log(isAnagram("dumble", "bumble"));
 
 
 

@@ -54,6 +54,17 @@ function Person(firstName, lastName) {
 }
 console.log(person);
 
+
+
+
+
+
+
+
+
+
+
+
 // *NOKTA VEYA KÖŞELİ PARANTEZ İLE ERİŞİM
 
 const itSchool = {
@@ -63,6 +74,15 @@ const itSchool = {
 };
 console.log(itSchool.name); // Expected Output : 'Clarusway'
 console.log(itSchool["location"]); // Expected Output : "U.S."
+
+
+
+
+
+
+
+
+
 
 // *NOKTA VEYA KÖŞELİ PARANTEZ İLE YENİ ÖZELLİK EKLEME - DEĞİŞTİRME
 
