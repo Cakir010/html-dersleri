@@ -151,20 +151,114 @@ const people = {
     salary: "90000",
     drivingLicense: true,
   },
+  person4 : 'JS'
 }
+
+// //! ASSIGMENT
+// //? person2'nin adini ve maasini yazdiriniz.
+// console.log(`'person2 nin adı:'${people.person2.name} ve maaşı :${people.person2.salary}`);
+
+// //? people objesindeki tum salary 'leri yazdirin (Dongu kullanilmali)
+// for (let person in people) {
+//     console.log(`${person} salary: ${people[person].salary}`);
+// }
+
+// //? job'i developer olanlarin dob degerlerini yazdiriniz.
+// for (let person in people) {
+//     if (people[person].job =='developer') {
+//         console.log(people[person].dob);
+//     }
+// }
+
 
 //! ASSIGMENT
 //? person2'nin adini ve maasini yazdiriniz.
-console.log(`'person2 nin adı:'${people.person2.name} ve maaşı :${people.person2.salary}`);
-
+console.log(people.person2.name);
 //? people objesindeki tum salary 'leri yazdirin (Dongu kullanilmali)
+
+//* FOR IN
 for (let person in people) {
-    console.log(`${person} salary: ${people[person].salary}`);
+  console.log(person);
+  console.log(people[person].salary);
+  console.log(people[person].name);
 }
+//* FOR OF
+for (let key of Object.keys(people)) {
+  console.log(key);
+}
+for (let v of Object.values(people)) {
+  console.log(v);
+}
+for (let [k,v] of Object.entries(people)) {
+  console.log('KEY:' , k , 'VALUE:',v.job);
+}
+
+
+
 
 //? job'i developer olanlarin dob degerlerini yazdiriniz.
-for (let person in people) {
-    if (people[person].job =='developer') {
-        console.log(people[person].dob);
-    }
-}
+const devs= Object.values(people).filter((p) => p.job === 'developer')
+  .forEach((p) => console.log(p.dob))
+
+  console.log("*****")
+const dobs = Object.values(people)
+  .filter((p) => p.job === "developer")
+  .map((p) => p.dob) //? (2) ['1990', '2000']
+
+console.log(dobs)
+
+//********************************************************
+//* JSON => Javascript Object Notation
+//********************************************************
+
+const team = [
+  { name: "Josh", surname: "Adams", job: "developer", age: 30 },
+  { name: "Mary", surname: "Bary", job: "tester", age: 22 },
+  { name: "Hazel", surname: "Nut", job: "developer", age: 20 },
+] //* JSON
+
+// console.log(team)
+// console.log(team[1])
+
+//? team dizisine veri ekledik
+// team.push({ name: "Ahmet", surname: "yilmaz", job: "developer", age: 22 })
+// console.log(team)
+
+//* Ornek1: team dizisindeki job'lari tek tek yazdiriniz.
+// team.forEach((p) => console.log(p.job))
+
+//* Ornek2: age'leri bir artirarak yeni bir diziye saklayiniz.
+// const agesIncByOne = team.map((x) => x.age + 1)
+// console.log(agesIncByOne) //?(4) [31, 23, 21, 23]
+
+//* Ornek3: name ve surname'leri birlestirip buyuk harfe ceviren ve
+//* bunu fullName key'i olarak saklayan, ayni zamanda age degerlerini 5
+//* arttirarak age key'ine saklayan ve olusan diziyi donduren kodu yazınız.
+
+// const teamFullName = team.map((p) => {
+//   return {
+//     fullName: p.name.toUpperCase() + " " + p.surname.toUpperCase(),
+//     age: p.age + 5,
+//   }
+// })
+
+//? alternative yontem
+const teamFullName = team.map((p) => ({
+  fullName: p.name.toUpperCase() + " " + p.surname.toUpperCase(),
+  age: p.age + 5,
+}))
+
+console.log(teamFullName)
+
+//* Ornek: teamFullName dizisindeki 30 yasindan kucuk ve esit olanlarin isimlerini diziye saklayiniz.
+
+const teamUnder22 = teamFullName
+  .filter((p) => p.age < 30)
+  .map((p) => p.fullName)
+console.log(teamUnder22)
+
+//* Ornek6: ortalama yasi hesaplayiniz.
+const avgAges =
+  teamFullName.reduce((sum, person) => sum + person.age, 0) /
+  teamFullName.length
+console.log(avgAges)

@@ -332,99 +332,99 @@ const products = [
   { product: "coffee", price: 10 },
   { product: "tea", price: "" },
 ];
-// //?3-Use forEach to console.log each country in the countries array.
-// countries.forEach((v,i)=>console.log(`${i}`,v))
-// console.log("******3*************");
-// //?4-Use forEach to console.log each name in the names array.
-// names.forEach(v=>console.log(v))
-// console.log("*********4**********");
-// //?5-Use forEach to console.log each number in the numbers array.
-// numbers.forEach(v=>console.log(v))
-// console.log("***********5********");
-// //?Use map to create a new array by changing each country to uppercase in the countries array.
-// const a=countries.map(v=>v.toUpperCase())
-// console.log(a);
-// console.log("***********6********");
-// //?7-Use map to create an array of countries length from countries array.
-// const uzunluk=countries.map(v=>v.length)
-// console.log(uzunluk);
-// console.log("***********7********");
-// //?8Use map to create a new array by changing each number to square in the numbers array
+//?3-Use forEach to console.log each country in the countries array.
+countries.forEach((v,i)=>console.log(`${i}`,v))
+console.log("******3*************");
+//?4-Use forEach to console.log each name in the names array.
+names.forEach(v=>console.log(v))
+console.log("*********4**********");
+//?5-Use forEach to console.log each number in the numbers array.
+numbers.forEach(v=>console.log(v))
+console.log("***********5********");
+//?Use map to create a new array by changing each country to uppercase in the countries array.
+const a=countries.map(v=>v.toUpperCase())
+console.log(a);
+console.log("***********6********");
+//?7-Use map to create an array of countries length from countries array.
+const uzunluk=countries.map(v=>v.length)
+console.log(uzunluk);
+console.log("***********7********");
+//?8Use map to create a new array by changing each number to square in the numbers array
 
-// let kare=numbers.map(v=>v**2)
-// console.log(kare);
-// console.log("***********8********");
+let kare=numbers.map(v=>v**2)
+console.log(kare);
+console.log("***********8********");
 
-// //?9Use map to change to each name to uppercase in the names array
-// let n=names.map(v=>v.toUpperCase())
-// console.log(n);
-// console.log("***********9********");
-// //?10Use map to map the products array to its corresponding prices.
-// let p =products.map(v=>v.price)
-// console.log(p);
-// console.log("***********10********");
-// //?11Use filter to filter out countries containing land.
-// let l=countries.filter(v=>v.toLowerCase().includes("land"))
-// console.log(l);
-// console.log("***********11********");
-// //?12Use filter to filter out countries having six character.
-// let char =countries.filter(v=>v.length===6)
-// console.log(char);
-// console.log("***********12********");
-// //?13Use filter to filter out countries containing six letters and more in the country array.
-// let char1 = countries.filter((v) => v.length >=6);
-// console.log(char1);
-// console.log("***********13********");
-// //?14Use filter to filter out country start with 'E';
+//?9Use map to change to each name to uppercase in the names array
+let n=names.map(v=>v.toUpperCase())
+console.log(n);
+console.log("***********9********");
+//?10Use map to map the products array to its corresponding prices.
+let p =products.map(v=>v.price)
+console.log(p);
+console.log("***********10********");
+//?11Use filter to filter out countries containing land.
+let l=countries.filter(v=>v.toLowerCase().includes("land"))
+console.log(l);
+console.log("***********11********");
+//?12Use filter to filter out countries having six character.
+let char =countries.filter(v=>v.length===6)
+console.log(char);
+console.log("***********12********");
+//?13Use filter to filter out countries containing six letters and more in the country array.
+let char1 = countries.filter((v) => v.length >=6);
+console.log(char1);
+console.log("***********13********");
+//?14Use filter to filter out country start with 'E';
 
-// let count=countries.filter(v=>v.startsWith("S"))
-// console.log(count);
-// console.log("***********14********");
-// //?15Use filter to filter out only prices with values.
-// let p1=products.filter(v=>typeof v.price=="number")
-// console.log(p1);
-// console.log("*****************15*****************");
-// //?16Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
-// const arr = [true, 1, 45, "ali", "veli", "deli",false,0,5,9];
-// let ar1=arr.filter(v=>typeof v=="string")
-// console.log(ar1);
-// console.log("*****************16*****************");
-// //?17Use reduce to sum all the numbers in the numbers array.
-// const nn=numbers.reduce((a,c)=>a+c,0)
-// console.log(nn);
-// console.log("*****************17*****************");
+let count=countries.filter(v=>v.startsWith("S"))
+console.log(count);
+console.log("***********14********");
+//?15Use filter to filter out only prices with values.
+let p1=products.filter(v=>typeof v.price=="number")
+console.log(p1);
+console.log("*****************15*****************");
+//?16Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
+const arr = [true, 1, 45, "ali", "veli", "deli",false,0,5,9];
+let ar1=arr.filter(v=>typeof v=="string")
+console.log(ar1);
+console.log("*****************16*****************");
+//?17Use reduce to sum all the numbers in the numbers array.
+const nn=numbers.reduce((a,c)=>a+c,0)
+console.log(nn);
+console.log("*****************17*****************");
 
-//?18 Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
+?18 Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
 const concatCounties = countries.reduce((total, value) => {
   return value === "IceLand" ? total + ", and " + value : total + ", " + value;
 }, "Estonia");
 console.log(concatCounties + "are north European countries");
 
-// console.log("*****************18*****************");
-// //?20Use some to check if some names' length greater than seven in names array
-// let n1=names.some(v=>v.length>7)
-// console.log(n1);
+console.log("*****************18*****************");
+//?20Use some to check if some names' length greater than seven in names array
+let n1=names.some(v=>v.length>7)
+console.log(n1);
 
-// console.log("*****************20*****************");
-// //?21Use every to check if all the countries contain the word land
-// let n2 = countries.every((v) => v.includes("land"));
-// console.log(n2);
-// console.log("*****************21*****************");
-// //?22
+console.log("*****************20*****************");
+//?21Use every to check if all the countries contain the word land
+let n2 = countries.every((v) => v.includes("land"));
+console.log(n2);
+console.log("*****************21*****************");
+//?22
 
-// //?23Use find to find the first country containing only six letters in the countries array
-// const ülke=countries.find(v=>v.length==6)
-// console.log(ülke);
-// console.log("*****************23*****************");
-// //?24Use findIndex to find the position of the first country containing only six letters in the countries array
-// const ülke1=countries.findIndex(c=>c.length==6)
-// console.log(ülke1);
-// console.log("*****************24*****************");
-// //?25Use findIndex to find the position of Norway if it doesn't exist in the array you will get -1.
-// const norwaybul = countries.findIndex((value) => value === "Norway");
-// console.log(norwaybul);
-// console.log("*****************25*****************");
-// //?26 Use findIndex to find the position of Russia if it doesn't exist in the array you will get -1.
+//?23Use find to find the first country containing only six letters in the countries array
+const ülke=countries.find(v=>v.length==6)
+console.log(ülke);
+console.log("*****************23*****************");
+//?24Use findIndex to find the position of the first country containing only six letters in the countries array
+const ülke1=countries.findIndex(c=>c.length==6)
+console.log(ülke1);
+console.log("*****************24*****************");
+//?25Use findIndex to find the position of Norway if it doesn't exist in the array you will get -1.
+const norwaybul = countries.findIndex((value) => value === "Norway");
+console.log(norwaybul);
+console.log("*****************25*****************");
+//?26 Use findIndex to find the position of Russia if it doesn't exist in the array you will get -1.
 
 
 // =========================================================
