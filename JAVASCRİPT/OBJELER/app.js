@@ -15,11 +15,10 @@ var araba = {
   kasa: "sedan",
   vites: "otomatik",
   yakıt: "dizel",
-   home :{
-    kat:7,
-    sat:5,
-}
-
+  home: {
+    kat: 7,
+    sat: 5,
+  },
 };
 console.log(araba.home);
 
@@ -54,17 +53,6 @@ function Person(firstName, lastName) {
 }
 console.log(person);
 
-
-
-
-
-
-
-
-
-
-
-
 // *NOKTA VEYA KÖŞELİ PARANTEZ İLE ERİŞİM
 
 const itSchool = {
@@ -75,23 +63,11 @@ const itSchool = {
 console.log(itSchool.name); // Expected Output : 'Clarusway'
 console.log(itSchool["location"]); // Expected Output : "U.S."
 
-
-
-
-
-
-
-
-
-
 // *NOKTA VEYA KÖŞELİ PARANTEZ İLE YENİ ÖZELLİK EKLEME - DEĞİŞTİRME
 
-itSchool.firstAlumniYear = '2020'; // added new property
-itSchool['First Graduate Year'] = '2020';
+itSchool.firstAlumniYear = "2020"; // added new property
+itSchool["First Graduate Year"] = "2020";
 console.log(itSchool); // Expected Output : { name: 'Clarusway', location: 'U.S.', established: '2019', firstAlumniYear: 2020, First Graduate Year: '2020'}
-
-
-
 
 // class Dog {
 //     constructor(name, foot) {
@@ -100,43 +76,26 @@ console.log(itSchool); // Expected Output : { name: 'Clarusway', location: 'U.S.
 //     }
 //   }
 
-
-
 //   class Dog {
 //     constructor(name, foot) {
 //       this.dogName = name;
 //       this.foot = foot;
 //     }
 //   }
-//   myDog = new Dog("Buldog") 
+//   myDog = new Dog("Buldog")
 
 // console.log(new Dog);
 
-
-
 class Dog {
-    constructor(name, foot) {
-      this.dogName = name;
-      this.foot = foot;
-    }
-    current(){
-       return "I have a " + this.dogName + " and it has " + this.foot + " legs" ;
-    }
+  constructor(name, foot) {
+    this.dogName = name;
+    this.foot = foot;
   }
-  myDog = new Dog("Buldog", 4) 
-  console.log(myDog.current());
-
-
-
+  current() {
+    return "I have a " + this.dogName + " and it has " + this.foot + " legs";
+  }
+}
+myDog = new Dog("Buldog", 4);
+console.log(myDog.current());
 
 // ==================================================
-
-
-
-
-
-
-
-
-
-

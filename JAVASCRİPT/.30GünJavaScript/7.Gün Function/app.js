@@ -6,6 +6,17 @@
 // merhaba('yunus' , 28);
 // merhaba('Emre', 30)
 // merhaba()
+
+// // ===========
+
+// function araba(model , renk) {
+//    if(typeof araba ==='undefined') model= 'bigl girişi yapılmadı'
+//    if(typeof araba ==='undefined') renk= 'bigl girişi yapılmadı'
+//     console.log(`model:${model} renk:${renk}`);
+// }
+// araba('ford' , 'beyaz')
+// araba('wolksvagen', 'lacivert')
+
 //!burada merhaba isminde bir fonksiyn tanımladık ve içine isim ve yaş bilgisi olusturduk. bunları daha sonra cagırmak için merhaba fonksiyonunu kullanarak name ve age degişkenlerine deger atayabiliriz fakat herhangi bir deger girmegimizi varsayarsak bize undefined dönderecektir. fakat biz if koşulu ile bilgi girmegimiz takdirde bilgi yok tanımlamasını yaparsak merhaba fonksiyonumuza deger atamadıgımız takdırde bize bilgi yok ifadesini yazdıracaktır.
 // =======================
 // ÖR=========
@@ -29,7 +40,7 @@
 // database.update('192.168.1.16')
 
 // function square() {
-//     let num = 2
+//     let num = +prompt('gir')
 //     let sq = num * num
 //     console.log(sq)
 //   }
@@ -45,6 +56,19 @@
 // }
 
 // printFullName() // calling a function
+
+// =====================================
+
+// function veriYazdir() {
+//     let ad = 'yunus emre'
+//     let soyad = ' çakır'
+//     let yaş = 28
+//     let boy = 175
+//     let hepsi = ad + soyad + yaş + boy
+//     console.log(hepsi);
+// }
+
+// veriYazdir()
 
 // function  database (){
 //     let firstname= 'yunus emre'
@@ -151,19 +175,14 @@
 //  let hello = square()
 // console.log(hello);
 
-
-
 // function number (){
-//     let num1 =2 
+//     let num1 =2
 //     let num2= 5
 //     const sum = num1 * num2 * 132
-//    return sum 
+//    return sum
 // }
 //  let toplam = number()
-// console.log(toplam); 
-
-
-
+// console.log(toplam);
 
 // function printFullName() {
 //   let firstName = "Asabeneh";
@@ -195,7 +214,7 @@
 //     let numOne = 2
 //     let numTwo = 3
 //     let total = numOne + numTwo
-    // return total
+// return total
 
 // }
 // let bir = addTwoNumbers()
@@ -207,9 +226,37 @@
 //     return area
 // }
 // console.log(areaOfCircle(2));
+
+// function areaOfCircle(r) {
+//     let area =  Math.floor(Math.PI * r * r)
+//     return area
+// }
+// console.log(areaOfCircle(4));
+
+
+// function dikdortgenAlanı() {
+//     let uzunkenar= 10
+//     let kısakenar = 5
+//     let hesap = uzunkenar + kısakenar
+//     return hesap
+// }
+// console.log(dikdortgenAlanı());
+
+
+// function perimeterOfRectangle() {
+//     let uzunluk = 30
+//     let genişlik = 20
+//     let çevre = 2*(uzunluk + genişlik )
+//     return çevre
+// }
+// console.log(perimeterOfRectangle());
+
+
+
+
+
+
 // // ===================
-
-
 
 // function sumArrayValues(arr) {
 //     let sum = 0;
@@ -219,9 +266,8 @@
 //     return sum;
 //   }
 //   const numbers = [1, 2, 3, 4, 5,10];
-//       //calling a function
+// //       //calling a function
 //   console.log(sumArrayValues(numbers));
-
 
 // function sumArrayValues(array){
 //     let toplam =0
@@ -242,15 +288,11 @@
 // sumAllNums(1, 2, 3, 4)
 // // [1, 2, 3, 4]
 
-
-
-
-
 // function greetings(name = 'Peter') {
 //     let message = `${name}, welcome to 30 Days Of JavaScript!`
 //     return message
 //   }
-  
+
 //   console.log(greetings())
 //   console.log(greetings('Asabeneh'))
 
@@ -278,8 +320,8 @@
 // =============================================================
 
 // function  areaOfRectangle(uzunluk , genişlik){
-//     // let uzunluk 
-//     // let genişlik 
+//     // let uzunluk
+//     // let genişlik
 //     let alan = uzunluk * genişlik
 //     console.log(alan);
 //     return alan
@@ -328,19 +370,19 @@
 // =============================================
 
 // function bmi(){
-    
+
 //     let agırlık = 88
 //     let boy = 1.75
-//     let hesap = 88 /(1.75 *2) 
+//     let hesap = 88 /(1.75 *2)
 //     console.log(hesap);
-   
+
 //     return hesap
 // }
 // bmi();
 
 //     if (bmi <= 18.5){
 //     console.log('zayıf');
-    
+
 // }else if (bmi<18.5 && bmi>24.9){
 //     console.log('Normal');
 // }else if(bmi <25 && bmi>29.9){
@@ -361,24 +403,17 @@
 
 
 
+// ==========================COURSES==============
 
 
+function outer() {
+    let x = 15; //declaration in outer scope
+function inner() {
+    console.log(x); //outer scope is captured on declaration.
+}
+    return inner; //x goes out of scope afterr outer returns
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let innerWithX = outer();
+innerWithX(); //we can still access x

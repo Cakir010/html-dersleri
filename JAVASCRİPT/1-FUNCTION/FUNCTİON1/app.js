@@ -26,8 +26,8 @@ printHello()
 
 // const name = prompt('your name:')
 // const surname = prompt('your surname')
-// // const firstName = prompt('your name:')
-// // const lastName = prompt('your surname')
+// const firstName = prompt('your name:')
+// const lastName = prompt('your surname')
 
 // greet (name , surname)
 
@@ -38,11 +38,11 @@ printHello()
 // ORNEK 3
 // ==============================================
 
-// function calculate (name , yearofbird){
-//     const age=2022 - yearofbird
-//     console.log(`${name}'s age is ${age}`);
-// }
-// calculate('elif', 20)
+function calculate (name , yearofbird){
+    const age=2022 - yearofbird
+    console.log(`${name}'s age is ${age}`);
+}
+calculate('elif', 20)
 
 
 function calculate (name , yearofbird){              //!ANA PROGRAM 
