@@ -58,8 +58,8 @@ console.log(calculate('rose', 2010));
 //! conseolden girilen bi sayının tek veya cıft oldgunu hesaprlayan ve sonucu ana programa donduren sonucu fonksaıyonlar ile  ekrana yazdırınz 
 
 // function oddOrEven(num){
-//     // return num % 2 ? 'odd' : 'even'
-//     // return num % 2  === 0 ? 'even' : 'odd' // !-2.YÖNTEMDİR. EŞİTLEYEREK YAPTIK
+   // return num % 2 ? 'odd' : 'even'
+    // return num % 2  === 0 ? 'even' : 'odd' // !-2.YÖNTEMDİR. EŞİTLEYEREK YAPTIK
 
 // if (num % 2 === 0){
 //     return "even'{
