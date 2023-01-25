@@ -268,3 +268,12 @@ console.log(copyObj);
 
 const combinedObjs = { ...myObj, ...herObj };
 console.log(combinedObjs);
+
+
+// =============================
+
+
+
+
+
+

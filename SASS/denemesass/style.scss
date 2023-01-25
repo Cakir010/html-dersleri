@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$bgcolor:pink;
+$fontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$fontSize:1.2rem;
+body{
+    background-color: $bgcolor;
+    font-family: $fontFamily
+   
+}
+
+
+

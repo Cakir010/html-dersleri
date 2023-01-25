@@ -1,0 +1,19 @@
+body{
+     display: flex; 
+     justify-content: center;
+    align-items: center ;
+    text-align: center;
+    margin: 200px auto;
+}
+ 
+
+#p1{
+    font-size: 30px;
+    border: outset 5px;
+    outline-style: outset;
+}
+ #p2{
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 0.5rem;
+ }
