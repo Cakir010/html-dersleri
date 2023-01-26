@@ -1,6 +1,4 @@
-:root{
-  --blue: #
-}
+
 
 
 :root {
@@ -16,10 +14,10 @@
 .nav-link {
   transition: color 0.5s;
 }
-.nav-link.active {
+.navbar .nav-link.active {
   color: var(--red) !important;
 }
-.nav-link:hover {
+.navbar .nav-link:hover {
   color: var(--red);
 }
 
@@ -67,16 +65,29 @@
   transition: 1.2s all;
 }
 .card:hover {
-  /* border: 2px solid red; */
-  /* z-index: 1; */
   box-shadow: 0 44px 150px rgba(68, 233, 208, 0.2);
   transform: scale(1.05);
   transition: 0.7s;
+  
 }
+
 
 /*! ----------- 4- STUDENTS SECTION ----------*/
 
 /*! ----------- 5- COURSES SECTION ----------- */
+
+section#courses .nav-link.active{
+  background-color: var(--red);
+ 
+}
+section#courses .nav-link{
+  color: white;
+}
+
+
+section#courses .nav-pills button{
+font-size: 0.8rem;
+}
 
 /*! ----------- 6- CONTACT SECTION ------------ */
 

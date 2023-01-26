@@ -18,17 +18,17 @@
 
 //* Senkron
 //* ------------------------------------------------
-// const wait = (waitingTime) => {
-//   const starTime = new Date().getTime()
-//   while (new Date().getTime() < starTime + waitingTime) {}
-// }
+const wait = (waitingTime) => {
+  const starTime = new Date().getTime()
+  while (new Date().getTime() < starTime + waitingTime) {}
+}
 
-// console.log("hello")
-// // alert("hi") //? blocking code
-// console.time("myTimer")
-// wait(2000) //? blocking code
-// console.timeEnd("myTimer")
-// console.log("fs13")
+console.log("hello")
+// alert("hi") //? blocking code
+console.time("myTimer")
+wait(2000) //? blocking code
+console.timeEnd("myTimer")
+console.log("fs13")
 
 //* Asenkron (setTimeout)
 //*------------------------------------------------
@@ -64,18 +64,18 @@
 //* yapisinin kullanilmasi gerekebilir. Fakat bu iyi bir programlama yaklasimi degildir.
 // !callback hell olarak adlandirilan bu yapinin anlasilmasi ve surdurulebilirligi oldukca zordur.
 
-setTimeout(() => {
-    console.log("john:Hi")
-    setTimeout(() => {
-      console.log("Sarah: Hello")
-      setTimeout(() => {
-        console.log("John: How Are you?")
-        setTimeout(() => {
-          console.log("Sarah:Fine and you?")
-        }, 1000)
-      }, 1000)
-    }, 1000)
-  }, 1000)
+// setTimeout(() => {
+//     console.log("john:Hi")
+//     setTimeout(() => {
+//       console.log("Sarah: Hello")
+//       setTimeout(() => {
+//         console.log("John: How Are you?")
+//         setTimeout(() => {
+//           console.log("Sarah:Fine and you?")
+//         }, 1000)
+//       }, 1000)
+//     }, 1000)
+//   }, 1000)
   
   //? COZUMLER:
   //?----------------------------------------------------
