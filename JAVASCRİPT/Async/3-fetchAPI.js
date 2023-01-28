@@ -21,7 +21,7 @@ const showGithubUsers = (users) => {
   console.log(users)
   const userArticle = document.querySelector(".users")
 
-  users.forEach((user) => {
+  users?.forEach((user) => {
     //  console.log(user)
     userArticle.innerHTML += `
     <h2 class="h6 text-warning">${user.login}</h2>
