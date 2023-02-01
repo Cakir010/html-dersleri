@@ -1,6 +1,5 @@
 // KARAR YAPILARI IF ELSE TERNARY SWITCH
 
-
 // IF
 
 // ÖR :
@@ -29,7 +28,6 @@
 
 // ======================================================
 
-
 // let a = 5
 // a = 8;
 // console.log(a);
@@ -52,13 +50,11 @@
 //     console.log('hepsi eşit');
 // }
 
-
 //*================EHLİYET ÖRNEGİ=======================================
 
 // const yas = +prompt('Enter your yas')
 // const saglikDurumu = confirm('saglik belgen varmı')
 // const sınav =+prompt('bitirme notun')
-
 
 // const sonuc = yas >= 18 && saglikDurumu ===true && sınav >= 70
 
@@ -108,7 +104,6 @@
 // }
 // alert(bugun);
 
-
 // ====================FOR WHİLE DO WHİLE ==============================
 
 // for (let i = 0; i <= 10; i++){
@@ -128,7 +123,6 @@
 
 // =========================WHİLE ===================
 
-
 // let text
 // let i = 0
 // while (i < 10) {
@@ -146,10 +140,7 @@
 // } while (i>5)
 // console.log(i);
 
-
-
 // ======================FUNCTION================
-
 
 // const num = +prompt ('Enter your number ')
 
@@ -157,19 +148,12 @@
 
 // console.log(sonuc);
 
-
-
-
-
-
 // let x = "sadi"
 // let y = "hadi"
 // function anagram (x, y) {
 //   return x.split("").sort().join("") === y.split("").sort().join("")
-// } 
+// }
 // console.log(anagram(x,y));
-
-
 
 // let anagram1 = prompt('kelimegir')
 // let anagram2 = prompt('kelimegir')
@@ -177,4 +161,31 @@
 //     return anagram1.split('').sort().join('')=== anagram2.split('').sort().join('')
 // }
 // console.log(deger (anagram1,anagram2));
+
+// ====================================
+
+let lion = {
+  category: "can",
+  region: "canan",
+  "lion-lycan": "human",
+};
+console.log(lion["lion-lycan"]);
+console.log(lion.category);
+console.log(lion["lion-lycan"]);
+
+const Susan = {
+  firstName1: "susan",
+  lastName1: "steward",
+  age: 14,
+
+  hobbies: {
+    hobby1: "singing",
+    hobby2: "dancing",
+  },
+};
+const {firstName1 , age , } = Susan
+
+console.log(firstName1);
+console.log(lastName1);
+
 
